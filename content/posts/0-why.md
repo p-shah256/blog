@@ -1,6 +1,7 @@
-
-
-# Why am I starting this?
++++
+title = 'Why am I starting this'
+date = 2024-09-01T16:54:24-04:00
++++
 
 Recently I was reading an article by Robin Sharma, where he talks about 5 rituals - and one of them was the &ldquo;*ritual of being a student*&rdquo; everyday for 60 minutes.
 He called this &ldquo;60 minute student&rdquo;. To be good at something its important to be an avid learner and to make time for it no matter what.

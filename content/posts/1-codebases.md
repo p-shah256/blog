@@ -1,6 +1,7 @@
-
-
-# How I understood a complex codebase
++++
+title = 'How I understood a complex codebase'
+date = 2024-09-07T16:54:24-04:00
++++
 
 > Note: This is not the only way to understand complex codebases, its just a way that I discovered and used recently. Feel free to disagree!
 
