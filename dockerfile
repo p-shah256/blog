@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-# Install Hugo, bash, and git
+# Install Hugo, bash, git, and nginx
 RUN apk add --no-cache hugo bash git
 SHELL ["/bin/bash", "-c"]
 
@@ -14,8 +14,10 @@ RUN echo hugo --version
 COPY content ./content
 COPY hugo.toml ./hugo.toml
 
-# Expose Hugo's default port
+# Build the Hugo site
+RUN hugo --baseURL=https://shah256.dev
+
+# Expose port 80 for nginx
 EXPOSE 1313
 
-# Command to run Hugo server
-CMD ["hugo", "server", "--bind=0.0.0.0", "--baseURL=http://192.168.1.154", "-D"]
+CMD ["hugo", "server", "--bind=0.0.0.0", "--appendPort=false", "--baseURL=https://shah256.dev", "-D"]

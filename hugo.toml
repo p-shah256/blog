@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://shah256.dev"
 languageCode = "en-us"
 title = "shah255's notebook"
 # Add it only if you keep the theme in the `themes` directory.
