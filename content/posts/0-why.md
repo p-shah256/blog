@@ -3,27 +3,12 @@ title = 'Why am I starting this'
 date = 2024-09-01T16:54:24-04:00
 +++
 
-Recently I was reading an article by Robin Sharma, where he talks about 5 rituals - and one of them was the &ldquo;*ritual of being a student*&rdquo; everyday for 60 minutes.
-He called this &ldquo;60 minute student&rdquo;. To be good at something its important to be an avid learner and to make time for it no matter what.
-Not that its just 60 mins and you should stop there, but you get the idea, atleast 60 minutes.
+Recently, I watched the Bollywood movie 3 Idiots, and there was a line that really resonated with me:
 
-> Schedule 60 minutes a day for your learning. It could be anything- journal, audiobook, paperback, summary.
-> No matter the age or place. Every master thinks like a beginner.
+> सक्सेस के पीछे मत भागो, एक्सीलेंस का पीछा करो। सक्सेस झक मार के तुम्हारे पीछे आएगी।
 
-And thinking about it, I realized has to do with coming out of your comfort zone and learning, doing something you are a total beginner in.
-It&rsquo;s a practice that can reap very high rewards in any profession, and in fast industries like SWE (where theres a new JS framework everyday, huh) your only skill is your skill to learn things.
+Translates to something like this "do not run behind success, instead chase excellence and success will come with it!" I believe this dialouge was a translation of what Einstien said [here.](https://www.brainyquote.com/quotes/albert_einstein_122232)
+I believe competent and excellent engineers are built of systemic habits and love towards what they do. Its really hard to be excellent at something you aren't intrested into or something you don't believe in. I mean ofcourse there are really great born engineers but I ain't one.
 
-This blog aims to be just that: a note about what I learnt this week/day/month just like keeping a journal about my progress as an engineer, can go a long way.
-Not for anyone to read, not for anyone to share (you are always welcome to, but this isn&rsquo;t written primararily for that purpose).
-It&rsquo;s just an engineer&rsquo;s notebook and an engineer trying to stick to a ritual of learning.
-
-That&rsquo;s the idea I grew up with, on who an engineer is. Watching movies like 3 idiots where an engineer is someone who constantly keeps breaking apart objects to for the raw curiosity of how things work. Digging down into the last details till they reach simple first principles.
-This is just a way to remain what I have loved - an engineer feeding his curiosity.
-
-
-### Some rules I promised to myself I will follow:
-
-1.  Not use any kind of LLM to write any part of this blog. I wish to keep it as real and human as possible, and I hate reading what it generates(maybe its just me and my prompts suck).
-    But that just defeats the idea.
-2.  (more to follow)
-
+To become a better engineer, I realized I need to build systems that push me to grow. I’m a big fan of Atomic Habits and the idea that “You do not rise to the level of your goals. You fall to the level of your systems.” I also love the concept of a growth mindset—constantly stretching yourself to get better. It’s also particularly worthwhile to reach that elusive [flow state](<https://en.wikipedia.org/wiki/Flow_(psychology)>), where you’re so absorbed in the task that everything else fades away.
+This blog is my way of systemizing my learning. It’s like a notebook where I can record what I’ve learned, track my progress, and reflect on my growth as an engineer. It’s not written for anyone in particular—just a personal habit I’m forming to stay accountable to myself. If others find value in it, great, but that’s not the main goal.
