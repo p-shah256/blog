@@ -1,5 +1,6 @@
 +++
 title = "The Hidden Dangers of AI Copilots for Junior Developers"
+author = ["Pranchal Shah"]
 date = 2024-12-10
 draft = false
 +++
@@ -30,6 +31,7 @@ If that PR had slipped through... let's just say I prefer my AWS bills without h
 
 But it wasn't a potential cloud disaster that really drove this lesson home. It was a seemingly simple university project that changed how I think about code forever.
 Picture this: Systems programming class, building a Unix shell from scratch. Like any "efficient" developer, I dove straight into coding. No design, no planning - just me, my IDE, and a list of features to implement.
+
 The result? 1,200 lines of what I'll generously call "code." Sure, it worked... technically. But every new feature was like playing Jenga with spaghetti. Edge cases? Pure nightmare fuel.
 Then came submission day. 7 PM, five hours until deadline, after a week of wrestling with this monster. I hit a wall. Looking at my tangled mess of array manipulations and nested loops, something finally clicked: I had never actually thought about the design. Not once. So I did something that felt insane at the time - I stepped away from my computer. Took a walk. And for the first time, I actually thought about how a shell should work. No IDE, no Stack Overflow, no copilot suggestions. Just pure thinking.
 
@@ -98,6 +100,7 @@ The numbers shocked me. All that time I thought I was "saving" with copilot? I w
 
 John Ousterhout's "tactical vs. strategic programming" concept finally clicked for me after that Postgres debugging session. Every time I take a shortcut with AI, I'm borrowing against my future understanding. And like financial debt, technical debt compounds.
 Here's what I now know for sure: The time I "save" using AI copilots isn't really saved - it's just deferred, with interest.
+
 So here's my challenge to every new grad and junior developer: Try coding without AI assistance for just one month. Be intentional about every line you write. Keep a learning journal. Embrace the confusion - it's where the real learning happens.
 Yes, you'll feel slower. Yes, it will be frustrating. But as the team at Boot.dev says - taking shortcuts is actually the longest way to learn something.
 Because at the end of the day, there's no AI shortcut to true understanding.
