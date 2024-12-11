@@ -1,6 +1,5 @@
 +++
 title = "The Hidden Dangers of AI Copilots for Junior Developers"
-author = ["Pranchal Shah"]
 date = 2024-12-10
 draft = false
 +++
