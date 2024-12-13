@@ -75,29 +75,28 @@ Here's a real example: Last week, we were debugging performance issues where our
 
 Yes, it took longer. But now I can explain our caching strategy to anyone who asks. More importantly, I can debug it when things go wrong.
 
-<!--list-separator-->
 
--  The Hidden Learning Tax
+#### The Hidden Learning Tax {#the-hidden-learning-tax}
 
-    This brings me to something I've started tracking: the real time cost of "fast" coding.
+This brings me to something I've started tracking: the real time cost of "fast" coding.
 
-    > With AI assistance:
-    >
-    > -   Coding: 1 hour of feeling productive
-    > -   Debugging: 5 hours of desperately getting an LLM to solve an issue
-    > -   Learning: Practically zero
-    > -   Brain engagement: Optional
+> With AI assistance:
+>
+> -   Coding: 1 hour of feeling productive
+> -   Debugging: 5 hours of desperately getting an LLM to solve an issue
+> -   Learning: Practically zero
+> -   Brain engagement: Optional
 
-    <!--quoteend-->
+<!--quoteend-->
 
-    > Without AI:
-    >
-    > -   Research: 2 hours of concentrated learning
-    > -   Coding: 3 hours of intentional implementation
-    > -   Debugging: Much easier when you understand the system
-    > -   Brain engagement: Required (and rewarding)
+> Without AI:
+>
+> -   Research: 2 hours of concentrated learning
+> -   Coding: 3 hours of intentional implementation
+> -   Debugging: Much easier when you understand the system
+> -   Brain engagement: Required (and rewarding)
 
-    The numbers shocked me. All that time I thought I was "saving" with copilot? I was just pushing it to the debugging phase, with interest. And unlike technical debt that you can refactor away, knowledge debt compounds silently until it breaks you.
+The numbers shocked me. All that time I thought I was "saving" with copilot? I was just pushing it to the debugging phase, with interest. And unlike technical debt that you can refactor away, knowledge debt compounds silently until it breaks you.
 
 
 ## Real Cost of Quick Wins {#real-cost-of-quick-wins}
