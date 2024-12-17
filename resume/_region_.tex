@@ -1,0 +1,201 @@
+\message{ !name(main.tex)}\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+\input{glyphtounicode}
+
+
+
+
+
+
+
+
+% Custom spacing constants
+\newcommand{\sectionspace}{\vspace{-15pt}}
+\newcommand{\itemspace}{\vspace{-10pt}}
+\newcommand{\preItemSpace}{\vspace{-7pt}}
+
+% Section formatting
+\titleformat{\section}{%
+    \itemspace%
+    \large\scshape\raggedright%
+}{}{0em}{} [\color{black}\titlerule\preItemSpace]
+
+\newcommand{\eduItem}[5][]{
+    \item
+    \begin{tabular*}{\textwidth}
+        {l@{\hspace{4pt}}l@{\hspace{4pt}}l@{\extracolsep{\fill}}r}
+        \textbf{#2} & $|$ \textbf{\textit{#3}} & $|$ \textit{#5} & \textbf{#4} \\
+        \ifx&#1&% Check if optional courses parameter is empty
+        \else
+            \multicolumn{4}{l}{\small#1}
+        \fi
+    \end{tabular*}
+    \itemspace
+}
+
+\newcommand{\expItem}[4]{
+    \item
+    \begin{tabular*}{\textwidth}
+        {l@{\hspace{4pt}}l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}r}
+        \textbf{#1} & $|$ \textit{#2} & \textbf{#3} & \textbf{\small#4}
+    \end{tabular*}
+    \itemspace
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+
+% List environments with consistent spacing
+\newcommand{\sectionStart}{
+    \begin{itemize}[
+        leftmargin=0pt,
+        label={},
+        % topsep=6pt,    % Space before first item
+        % parsep=6pt,    % Space between items
+        % itemsep=0pt,   % Additional space between items
+        % partopsep=0pt  % Extra space if list starts new paragraph
+    ]
+}
+
+\newcommand{\sectionEnd}{
+    \end{itemize}
+    \sectionspace
+}
+
+
+\newcommand{\bulletStart}{
+    \begin{itemize}[
+        leftmargin=10pt,
+        label={\textbullet},  % Show me those dots!
+        topsep=-7pt,    % Space before first item
+        % parsep=6pt,    % Space between items
+        % itemsep=0pt,   % Additional space between items
+        % partopsep=0pt  % Extra space if list starts new paragraph
+    ]
+}
+
+\newcommand{\bulletEnd}{
+    \end{itemize}
+    \sectionspace
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\message{ !name(main.tex) !offset(-3) }
+
+%----------HEADING-----------------
+\begin{center}
+    \textbf{\Huge \scshape Pranchal Shah} \\
+    \vspace{1pt}
+    \small 681-242-7542 $|$
+    \href{mailto:x@x.com}{\underline{pranchx@gmail.com}} $|$
+    \href{https://linkedin.com/in/pranchals}{\underline{linkedin.com/in/pranchals}} $|$
+    \href{https://github.com/p-shah256}{\underline{github.com/p-shah256}} $|$
+    \href{https://shah256.dev}{\underline{shah256.dev}} $|$
+    \small Boston, MA
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\sectionStart
+    \eduItem
+        [Courses: Network Security, Computer Systems, OOP, Database Engineering, Computer Networking]
+        {MS in Computer Science}
+        {Northeastern University}
+        {Jan 2023 -- May 2025}
+        {Boston, MA}
+    \eduItem
+        {B.Arch in Architectural Engineering}
+        {Sardar Patel University}
+        {Aug 2014 -- Dec 2019}
+        {India}
+\sectionEnd
+
+%--------SKILLS------------
+\section{Technical Skills}
+\begin{tabular*}{\textwidth}{l@{\hspace{10pt}}l}
+    \textbf{\small Languages} & \small : Go, Python, C/C++, TypeScript, JavaScript, Java \\
+    \textbf{\small Backend Technologies} & \small : Node.js, Django, Express, SpringBoot, FastAPI, gRPC, GraphQL, Restful APIs \\
+    \textbf{\small Database \& Storage} & \small : PostgreSQL, MongoDB, Redis, Elasticsearch, Kafka, RabbitMQ \\
+    \textbf{\small DevOps \& Cloud} & \small : AWS, GCP, Azure, Kubernetes, Docker, Terraform, Pulumi, Prometheus, Grafana \\
+    \textbf{\small Frontend \& Web} & \small : React.js, Next.js, HTML, CSS, Tailwind, HTMX \\
+\end{tabular*}
+
+\section{Professional Experience}
+  \sectionStart
+    \expItem
+      {FoxyAI}{Boston, MA}
+      {Software Engineer Intern}{May 2024 -- Present}
+      \bulletStart
+       \resumeItem
+          {Engineered a high-throughput image processing pipeline using containerized Golang microservices that reduced processing time by 73\% (from 10:37 to 2:53 mins) while handling 12M+ daily images}
+        \resumeItem
+          {Optimized GPU utilization on A100 clusters using Kubernetes NVIDIA Multi-Process Service (MPS), achieving $12\%$ faster processing across 14 concurrent ML models}
+        \resumeItem
+          {Architected a cross-cloud media caching system using GCP Storage and AWS SQS that processes 90M+ weekly images, implementing Pulumi IaC to achieve \$1.2M annual cost reduction}
+        \resumeItem
+          {Engineered a serverless E2E testing infrastructure leveraging AWS (S3, Lambda, API Gateway, DynamoDB) achieved 65\% faster test execution ($120s$ to $<42s$) through multi-threaded test orchestration}
+        \resumeItem
+          {Designed audit logging system in Golang and PostgreSQL, capturing 1M+ daily trails with sub-millisecond times}
+      \bulletEnd
+
+    \eduItem
+      {B.Arch in Architectural Engineering}
+      {Sardar Patel University}
+      {Aug 2014 -- Dec 2019}
+      {India}
+  \sectionEnd
+
+\end{document}
+
+\message{ !name(main.tex) !offset(-201) }

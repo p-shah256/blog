@@ -1,0 +1,254 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+\input{glyphtounicode}
+
+
+
+
+
+
+
+
+% Custom spacing constants
+\newcommand{\preSecSpace}{-10pt}
+\newcommand{\postSecSpace}{-8pt}
+\newcommand{\postItemSpace}{-10pt}
+\newcommand{\preItemSpace}{-10pt}
+\newcommand{\itemspace}{-5pt}
+
+\newcommand{\preSecVSpace}{\vspace{\preSecSpace}}
+\newcommand{\postSecVSpace}{\vspace{\postSecSpace}}
+\newcommand{\postItemVSpace}{\vspace{\postItemSpace}}
+\newcommand{\preItemVSpace}{\vspace{\preItemSpace}}
+
+% Section formatting
+\titleformat{\section}{%
+    \preSecVSpace
+    \large\scshape\raggedright%
+}{}{0em}{} [\color{black}\titlerule\postSecVSpace]
+
+\newcommand{\eduItem}[5][]{
+    \item
+    \begin{tabular*}{\textwidth}
+        {p{5.7in}@{\extracolsep{\fill}}r}
+        \textbf{#2} $|$ \textbf{\textit{#3}} $|$ \textit{#4} & \textbf{#5} \\
+    \end{tabular*}
+        \ifx#1&% Check if optional courses parameter is empty
+        \else
+            \begin{tabular*}{\textwidth}
+                {l@{}p{4.5in}}
+                \small{Relevant Courses: } & {\small #1} \\
+            \end{tabular*}
+        \fi
+    \postItemVSpace
+}
+
+% [] is the centered item, can be school, position, if empty will be leftout
+\newcommand{\header}[4][]{
+    \item
+        \ifx&#1&% Check if optional courses parameter is empty
+            \begin{tabular*}{\textwidth}
+                {l@{\hspace{4pt}} l@{\extracolsep{\fill}}r}
+                \textbf{#2} & $|$ \textit{#3} & \textbf{\small#4} \\
+        \else
+            \begin{tabular*}{\textwidth}
+                {l@{\extracolsep{\fill}}r}
+                \textbf{#2} $|$  &  \textbf{\small#4} \\
+                \textbf{#1} & \textit{#3} \\
+        \fi
+    \end{tabular*}
+    \postItemVSpace
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+
+% List environments with consistent spacing
+\newcommand{\sectionStart}{
+    \begin{itemize}[
+        leftmargin=0pt,
+        label={},
+        topsep=\preItemSpace,    % Space before first item
+        itemsep=2pt,   % Additional space between items
+        % after={\preSecVSpace}  % The magic sauce! Space after the list
+    ]
+}
+
+
+\newcommand{\sectionEnd}{
+    \end{itemize}
+    % \preSecVSpace
+}
+
+
+\newcommand{\bulletStart}{
+    \begin{itemize}[
+        leftmargin=10pt,
+        label={$\circ$},  % Show me those dots!
+        topsep=\preItemSpace,    % Space before first item
+        % parsep=0pt,    % Space between items
+        % after={\vspace{\itemspace}}  % The magic sauce! Space after the list
+        itemsep=0pt,   % Additional space between items
+    ]
+}
+
+\newcommand{\bulletEnd}{
+    \end{itemize}
+    % \preSecVSpace
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+%----------HEADING-----------------
+\begin{center}
+    \textbf{\Huge \scshape Pranchal Shah} \\
+    \vspace{1pt}
+    \href{mailto:pranchx@gmail.com}{\small\underline{pranchx@gmail.com}} $|$
+    \small 681-242-7542 $|$
+    \href{https://linkedin.com/in/pranchals}{\underline{Linkedin.com/pranchals}} $|$
+    \href{https://github.com/p-shah256}{\underline{github.com/p-shah256}} $|$
+    \href{https://shah256.dev}{\underline{shah256.dev}} $|$
+    \small Boston, MA
+    \vspace{1pt}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\sectionStart
+    \eduItem
+        [Network Security, Kernel implementation, Computer Systems, OOP, Data Structures, Low level Software Security, Algorithms, Database Management ]
+        {\textbf {MS in Computer Science}}
+        {\textbf{\textit{Northeastern University}}}
+        {\textit{Boston, MA}}
+        {\textbf{Jan 2023 -- May 2025}}
+    \eduItem
+        {\textbf{B.Arch in Architectural Engineering}}
+        {\textbf{\textit{Sardar Patel University}}}
+        {\textit{India}}
+        {\textbf{Aug 2014 -- Dec 2019}}
+\sectionEnd
+
+%--------SKILLS------------
+\section{Technical Skills}
+\begin{tabular*}{\textwidth}{l@{\hspace{10pt}}l}
+    \textbf{\small Languages} & \small : Go, C/C++, Python, TypeScript, JavaScript, Java \\
+    \textbf{\small Web Technologies} & \small : Node.js, Django, Express, SpringBoot, React, RestAPI, GraphQL, gRPC, HTMX \\
+    \textbf{\small Database \& Storage} & \small : PostgreSQL, MongoDB, Redis, Elasticsearch, Kafka, RabbitMQ \\
+    \textbf{\small DevOps \& Cloud} & \small : AWS, GCP, Azure, Kubernetes, Docker, Terraform, Pulumi, Jenkins \\
+    \textbf{\small Tools \& Observability} & \small : Git, Jenkins, Prometheus, Grafana, DataDog, Github Actions \\
+    % \textbf{\small Architecture Patterns} & \small : Microservices, Event-Driven, DDD, CQRS, Hexagonal Architecture
+\end{tabular*}
+
+\section{Professional Experience}
+    \sectionStart
+    \header [Software Engineer Intern]
+        {FoxyAI}{Boston, MA}{May 2024 -- Present}
+            \bulletStart
+            \resumeItem {Architected a distributed pipeline with Golang and Docker, running 12M+ daily images, reduced processing time by 73\%}
+            \resumeItem {Improved ML model inference speed by 12\% using NVIDIA MPS on Kubernetes GPU scheduling on A100 clusters}
+            \resumeItem {Implemented cross-cloud caching layer(AWS/GCP) reducing processing costs by 35\%, processing 90M+ images weekly}
+            \resumeItem {Introduced serverless concurrent E2E testing with real-time alerts on Slack using Jest+TS, decreasing test time by 65\%}
+            \resumeItem {Developed AWS SQS and PostgreSQL-based audit trail system handling 3000 QPS with 0.8ms average latency}
+            \bulletEnd
+
+        \header [Computational Engineer]
+            {Sangath LLP}{Ahmedabad, India} {Dec 2020 -- Jul 2022}
+            \bulletStart
+                \resumeItem {Engineered extensible C\# plugin framework reducing manufacturing simulation time by 33\% across modelling workloads}
+                \resumeItem {Led 5-person team building manufacturing analytics pipeline for \$22M project, reducing material waste by 27\%}
+                \resumeItem {Automated Python workflows across 20+ projects, transforming 40-hour processes to 15-min computations of estimates}
+            \bulletEnd
+
+        \header [Software Engineer (Backend)]
+            {Excellence Org} {Mumbai, India}  {Dec 2019 -- Dec 2020}
+            \bulletStart
+                \resumeItem {Built internal developer platform with CI/CD using Github actions reducing deployment time from 2 hours to 15 minutes}
+                \resumeItem {Optimized high-traffic PostgreSQL cluster achieving 85\% lower latency through partitioning and query optimization}
+                \resumeItem {Spearheaded Redis caching implementation with cache invalidation patterns, achieving 40\% reduction in database load}
+            \bulletEnd
+    \sectionEnd
+
+
+\section{Projects}
+    \sectionStart
+    \header {Operating Systems Components} {C, Assembly, Pthreads, Systems} {Sept 2024 - Present}
+        \bulletStart
+            \resumeItem{Created 16-bit CPU emulator supporting 20+ instructions with 64KB virtual memory and 8 registers management}
+            \resumeItem{Engineered user-level threading library with custom scheduler, and 90ns context switching wite 1000+ parallel threads}
+            \resumeItem{Programmed a Unix shell supporting 10+ pipes and process management with I/O redirection and 15+ bash features}
+        \bulletEnd
+
+    \header {Home lab Infrastructure} {Docker, Prometheus, Grafana, Nginx} {Jan 2024 - Present}
+        \bulletStart
+            \resumeItem{Initiated and deployed social forum serving 900+ weekly active users with 99.9\% uptime on Raspberry Pi hardware}
+            \resumeItem{Implemented Prometheus and Grafana observability stack monitoring 1000+ daily requests with 100ms p95 latency}
+            \resumeItem{Deployed production-grade infrastructure with nginx, fail2ban, personal blog and git server handling 10k+ weekly visits}
+        \bulletEnd
+
+    \header {Secure Messaging Protocol} {Python, OpenSSL, Cryptography, TCP/IP} {Mar 2024 - Apr 2024}
+        \bulletStart
+            \resumeItem{Designed custom end-to-end encrypted messaging protocol with perfect forward secrecy handling 100+ msg per second}
+            \resumeItem{Developed PKI infrastructure creating and exchanging X.509 certificates with RSA key exchange and digital signatures}
+            \resumeItem{Created secure session management with TLS-like handshake with  achieving less than 50ms connection establishment}
+
+        \bulletEnd
+
+
+    \header {draw Sync} {Node.js, WebSocket, Redis, React, Docker, Websockets} {Sept 2023 - Dec 2023}
+        \bulletStart
+            \resumeItem{Designed WebSocket and CanvasJS based collaborative drawing app supporting 50+ concurrent users with 25ms latency}
+            \resumeItem{Enhanced Redis pub/sub architecture for real-time state sync and messages handling 43 updates/second across clients}
+            \resumeItem{Introduced connection pool to improve reliability with automatic failover handling 1000+ WebSocket reconnections}
+        \bulletEnd
+
+    \sectionEnd
+\end{document}
