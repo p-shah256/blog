@@ -21,7 +21,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.7in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -106,27 +106,27 @@
     \begin{itemize}[
         leftmargin=0pt,
         label={},
-        topsep=2pt,           % Space before first item
-        % itemsep=0pt,                    % Additional space between items
-        % after={\preSecVSpace}         % The magic sauce! Space after the list
+        topsep=\preItemSpace,    % Space before first item
+        itemsep=2pt,   % Additional space between items
+        % after={\preSecVSpace}  % The magic sauce! Space after the list
     ]
 }
 
 
 \newcommand{\sectionEnd}{
     \end{itemize}
-    \preSecVSpace
+    % \preSecVSpace
 }
 
 
 \newcommand{\bulletStart}{
     \begin{itemize}[
         leftmargin=15pt,
-        label={$\circ$},                    % Show me those dots!
-        topsep=\preItemSpace,               % Space before first item
-        % parsep=0pt,                       % Space between items
-        % after={\vspace{\itemspace}}       % The magic sauce! Space after the list
-        itemsep=0pt,                        % Additional space between items
+        label={$\circ$},  % Show me those dots!
+        topsep=\preItemSpace,    % Space before first item
+        % parsep=0pt,    % Space between items
+        % after={\vspace{\itemspace}}  % The magic sauce! Space after the list
+        itemsep=0pt,   % Additional space between items
     ]
 }
 
@@ -161,7 +161,7 @@
     \href{https://linkedin.com/in/pranchals}{\small\underline{Linkedin.com/pranchals}} $|$
     \href{https://github.com/p-shah256}{\small\underline{github.com/p-shah256}} $|$
     \small Boston, MA
-    \vspace{-5pt}
+    \vspace{1pt}
 \end{center}
 
 %-----------EDUCATION-----------------
@@ -193,7 +193,7 @@
 
 \section{Professional Experience}
     \sectionStart
-        \expHeader {\textbf{FoxyAI}} {\textbf{\small{May 2024 -- Dec 2024}}} {\textit{Software Engineer Intern}} {\textit{Boston, MA}}
+        \expHeader {\textbf{FoxyAI}} {\textbf{\small{May 2024 -- Present}}} {\textit{Software Engineer Intern}} {\textit{Boston, MA}}
             \bulletStart
             \resumeItem {Engineered a high-throughput image processing pipeline using Docker and Golang microservices. Reduced
 processing time by 73\% (from 10:37 to 2:53 mins) with batching items on message queues while handling 12M+ daily images}
@@ -213,50 +213,36 @@ processing time by 73\% (from 10:37 to 2:53 mins) with batching items on message
         \expHeader {\textbf{Excellence Org}} {\textbf{\small{Dec 2019 -- Dec 2020}}} {\textit{Software Engineer (Backend)}} {\textit{Mumbai, India}}
             \bulletStart
                 \resumeItem {Optimized high-traffic PostgreSQL cluster achieving 85\% lower latency through partitioning and query optimization}
-                \resumeItem {Incorporated Redis for caching and invalidation patterns, achieving 40\% reduction in database load}
+                \resumeItem {Utilized Redis for caching and invalidation patterns, achieving 40\% reduction in database load}
                 \resumeItem {Contributed to an internal platform featuring automated CI/CD pipelines, centralized logging, and custom Grafana dashboards, cutting deployment time from 2 hours to 15 minutes, providing real-time visibility into system metrics}
             \bulletEnd
+    \sectionEnd
 
-        \expHeader {\textbf{Excellence Org}} {\textbf{\small{Dec 2019 -- Dec 2020}}} {\textit{Software Engineer Intern}} {\textit{Mumbai, India}}
-            \bulletStart
-                \resumeItem {Optimized high-traffic PostgreSQL cluster achieving 85\% lower latency through partitioning and query optimization}
-                \resumeItem {Incorporated Redis for caching and invalidation patterns, achieving 40\% reduction in database load}
-            \bulletEnd
-\sectionEnd
-
-\section{Open Source Contributions}
-\sectionStart
-    \projHeader {\textbf{Kubernetes} (Issue \href{https://github.com/kubernetes/kubernetes/issues/120633}{\underline{\textbf{$120633$}}}, PR \href{https://github.com/kubernetes/kubernetes/pull/129574}{\underline{\textbf{$129574$}}})  $|$ \textit{Go, CRI-O, containerd, Docker, Ginkgo} } {\textbf{\small{Jan 2025 - Present}}}
-        \bulletStart
-            \resumeItem{Enhanced Kubernetes node testing framework by implementing disk pressure simulation for container runtime eviction}
-            \resumeItem{Developed test suite validating critical resource pressure scenarios, collaborating with Red Hat and Google maintainers}
-        \bulletEnd
-\sectionEnd
 
 \section{Projects}
     \sectionStart
-    \projHeader {\href{https://github.com/p-shah256/5600-systems}{\underline{\textbf{Operating Systems Components}}} $|$ \textit{C, Assembly, Pthreads, Systems} } {\textbf{\small{Sept 2024 - Dec 2024}}}
+    \projHeader {\textbf{Operating Systems Components} $|$ \textit{C, Assembly, Pthreads, Systems} } {\textbf{\small{Sept 2024 - Present}}}
         \bulletStart
             \resumeItem{Created 16-bit CPU emulator supporting 20+ instructions with 64KB virtual memory and 8 registers management}
             \resumeItem{Engineered user-level threading library with custom scheduler, and 90ns context switching wite 1000+ parallel threads}
             \resumeItem{Programmed a Unix shell supporting 10+ pipes and process management with I/O redirection and 15+ bash features}
         \bulletEnd
 
-    \projHeader {\textbf{Home lab Infrastructure} $|$ \textit{Docker, Prometheus, Grafana, Nginx}} {\textbf{\small{Jan 2024 - Dec 2024}}}
+    \projHeader {\textbf{Home lab Infrastructure} $|$ \textit{Docker, Prometheus, Grafana, Nginx}} {\textbf{\small{Jan 2024 - Present}}}
         \bulletStart
             \resumeItem{Initiated and deployed social forum serving 900+ weekly active users with 99.9\% uptime on Raspberry Pi hardware}
             \resumeItem{Implemented Prometheus and Grafana observability stack monitoring 1000+ daily requests with 100ms p95 latency}
             \resumeItem{Deployed production-grade infrastructure with nginx, fail2ban, personal blog and git server handling 10k+ weekly visits}
         \bulletEnd
 
-    % \projHeader {\textbf{Secure Messaging Protocol} $|$ {\textit{Python, OpenSSL, Cryptography, TCP/IP}}}  {\textbf{\small{Mar 2024 - Apr 2024}}}
-    %     \bulletStart
-    %         \resumeItem{Designed custom end-to-end encrypted messaging protocol with perfect forward secrecy handling 100+ msg per second}
-    %         \resumeItem{Developed PKI infrastructure creating and exchanging X.509 certificates with RSA key exchange and digital signatures}
-    %         \resumeItem{Created secure session management with TLS-like handshake while achieving less than 50ms connection establishment}
-    %     \bulletEnd
-    %
-    %
+    \projHeader {\textbf{Secure Messaging Protocol} $|$ {\textit{Python, OpenSSL, Cryptography, TCP/IP}}}  {\textbf{\small{Mar 2024 - Apr 2024}}}
+        \bulletStart
+            \resumeItem{Designed custom end-to-end encrypted messaging protocol with perfect forward secrecy handling 100+ msg per second}
+            \resumeItem{Developed PKI infrastructure creating and exchanging X.509 certificates with RSA key exchange and digital signatures}
+            \resumeItem{Created secure session management with TLS-like handshake while achieving less than 50ms connection establishment}
+        \bulletEnd
+
+
     % \expHeader {draw Sync} {Node.js, WebSocket, Redis, React, Docker, Websockets} {Sept 2023 - Dec 2023}
     %     \bulletStart
     %         \resumeItem{Designed WebSocket and CanvasJS based collaborative drawing app supporting 50+ concurrent users with 25ms latency}

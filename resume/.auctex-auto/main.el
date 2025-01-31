@@ -31,9 +31,10 @@
     "babel"
     "tabularx")
    (TeX-add-symbols
-    '("header" ["argument"] 3)
     '("eduItem" ["argument"] 4)
     '("resumeItem" 1)
+    '("projHeader" 2)
+    '("expHeader" 4)
     "preSecSpace"
     "postSecSpace"
     "postItemSpace"
@@ -43,6 +44,7 @@
     "postSecVSpace"
     "postItemVSpace"
     "preItemVSpace"
+    "itemVSpace"
     "sectionStart"
     "sectionEnd"
     "bulletStart"

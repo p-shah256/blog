@@ -1,0 +1,1 @@
+shift + j appends next line at the end of current
