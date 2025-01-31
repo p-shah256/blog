@@ -1,9 +1,8 @@
 +++
+title = "The Hidden Dangers of AI Copilots for Junior Developers"
 author = ["Pranchal Shah"]
 draft = false
 +++
-
-## The Hidden Dangers of AI Copilots for Junior Developers {#dangers-copilots}
 
 I used to think being a 10x engineer meant coding at lightning speed. Fire up the IDE, let the AI copilot take the wheel, and watch the code flow. Ship fast, ship often, right?
 Wrong. Dead wrong.

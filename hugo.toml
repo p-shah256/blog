@@ -1,80 +1,38 @@
-baseurl = "https://shah256.dev"
-languageCode = "en-us"
-title = "shah255's notebook"
-# Add it only if you keep the theme in the `themes` directory.
-# Remove it if you use the theme as a remote Hugo Module.
-theme = "terminal"
+baseURL = "https://shah256.dev"
+title = "shah256's notebook"
+theme = "PaperMod"
+
+enableGitInfo = true  # Git becomes your timekeeper
+
+[frontmatter]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+# Enable search (because who doesn't love Ctrl+F on steroids?)
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+DateFormat = "January 2, 2006"  # Go's weird but canonical date format
+ShowLastMod = true  # 🎯 This is the money shot - shows "Updated on" text
+mainSections = ["posts"]  # VIP list - only posts get past the velvet rope
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
 
-  # show selector to switch language
-  showLanguageSelector = false
+[menu]
+main = [
+    {identifier = "posts", name = "Posts", url = "/posts/", weight = 10},
+    {identifier = "cheatsheets", name = "Cheatsheets", url = "/cheatsheets/", weight = 20},
+    {identifier = "about", name = "About", url = "/about/", weight = 40}
+]
 
-  # set theme to full screen width
-  fullWidthTheme = false
-
-  # center theme with default width
-  centerTheme = true
-
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
-  enableGitInfo = true
-
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # whether to show a page's estimated reading time
-  readingTime = true # default
-
-  # whether to show a table of contents
-  # can be overridden in a page's front-matter
-  # Toc = false # default
-
-  # set title for the table of contents
-  # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
-
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "shah256's notebook"
-
-    [languages.en.params]
-      owner = ""
-      keywords = ""
-      copyright = ""
-      menuMore = "Show more"
-      readMore = "Read more"
-      readOtherPosts = "Read other posts"
-      newerPosts = "Newer posts"
-      olderPosts = "Older posts"
-      missingContentMessage = "Page not found..."
-      missingBackButtonLabel = "Back to home page"
-      minuteReadingTime = "min read"
-      words = "words"
-
-      [languages.en.params.logo]
-        logoText = "shah256's notebook"
-        logoHomeLink = "/"
-
-      [languages.en.menu]
-        [[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about"
-       # [[languages.en.menu.main]]
-       #   identifier = "showcase"
-       #   name = "Showcase"
-       #   url = "/showcase"
+[params.homeInfoParams]
+Title = "👋 Hello!"
+Content = """
+Where bits meet bytes and code comes to life.
+Sharing thoughts on tech, security, and whatever else catches my compiler's attention.
+"""
