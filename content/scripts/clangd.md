@@ -1,5 +1,5 @@
 +++
-title = "The Hidden Dangers of AI Copilots for Junior Developers"
+title = "Generate compile_commands.json"
 author = ["Pranchal Shah"]
 draft = false
 +++
