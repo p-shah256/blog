@@ -4,9 +4,8 @@ author = ["Pranchal Shah"]
 draft = false
 +++
 
-# Script to generate compile_commands.json
-
-Necessary to create for LSP to work fine with neovim
+If you're working with C/C++ projects and your LSP is throwing useless "file not found" errors even though your code compiles fine, your problem is simple: the LSP doesn't know your project structure.
+Here's a script that solves this:
 
 ```bash
 #!/bin/bash
