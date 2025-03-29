@@ -5,4 +5,4 @@ WORKDIR /site
 COPY . .
 RUN git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 EXPOSE 1313
-CMD ["hugo", "server", "--bind=0.0.0.0", "--appendPort=false", "--baseURL=https://shah256.dev", "-D", "--disableFastRender"]
+CMD ["hugo", "server", "--bind=0.0.0.0", "--appendPort=false", "--baseURL=https://blog.shah256.dev", "-D", "--disableFastRender"]
