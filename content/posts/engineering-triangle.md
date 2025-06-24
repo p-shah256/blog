@@ -5,8 +5,7 @@ draft = false
 date = 2025-06-24
 +++
 
-So I've been thinking about tech careers lately, and I think there might be a better way to understand what's going on.
-Most advice I see is like "find your passion" or "play to your strengths" but that doesn't really help when you're trying to figure out where to go next. What I've noticed instead is that the industry has kind of organized itself around three different ways of optimizing, and understanding this might be more useful.
+So I've been thinking about tech careers lately, and I think there might be a better way to understand what's going on. Most advice I see is like "find your passion" or "play to your strengths" but that doesn't really help when you're trying to figure out where to go next. What I've noticed instead is that the industry has kind of organized itself around three different ways of optimizing, and understanding this might be more useful.
 
 ## The Three Types of Optimization
 
@@ -42,17 +41,13 @@ I've been thinking about this as a triangle where you can be anywhere inside it,
 - **Systems**: This is more like big tech where you can go deep into one domain and really master it. Maybe databases, distributed systems, operating systems, whatever. You have time to build things right because the company isn't going to die next quarter. You're optimizing for scale and long-term competitive advantage.
 - **Research**: This is like academia or research labs where you're trying to discover new things. Papers, talks, exploring what's possible. Usually funded by grants or universities or big company labs. The goal is advancing knowledge, not immediate products.
 
-From what I can tell, usually each software engineering role optimizes for one of these three things, and in my opinion, they are good - but the great roles are the ones that are in the middle of two / intersection of two ends.
-What I find interesting is these aren't really personality types - they're more like economic constraints that shape how you have to work.
+From what I can tell, usually each software engineering role optimizes for one of these three things, and in my opinion, they are good - but the great roles are the ones that are in the middle of two / intersection of two ends. These aren't really personality types - they're more like economic constraints that shape how you have to work.
 
 Most people cluster toward the edges, but I think the interesting positions are more toward the middle. Like, you might be mostly systems-focused but with some research background, or velocity-focused but with deeper technical knowledge than typical startup engineers.
 
-Coming back to my point earlier about why the intersection roles are better - look at some examples. OpenAI is somewhere between research and velocity. They're doing cutting-edge AI research but also shipping products fast enough to capture the market. DynamoDB was probably born at the intersection of research and systems - Amazon took distributed systems research and built it into something that could handle their actual scale.
-Most deep tech startups that try to do pure research under startup constraints seem to fail because they're trying to optimize for the wrong thing given their economic situation. But the ones that work figure out how to be in between - they can monetize stuff along the way while still pushing boundaries.
+Coming back to my point earlier about why the intersection roles are better - look at some examples. OpenAI is somewhere between research and velocity. They're doing cutting-edge AI research but also shipping products fast enough to capture the market. DynamoDB was probably born at the intersection of research and systems - Amazon took distributed systems research and built it into something that could handle their actual scale. Most deep tech startups that try to do pure research under startup constraints seem to fail because they're trying to optimize for the wrong thing given their economic situation. But the ones that work figure out how to be in between - they can monetize stuff along the way while still pushing boundaries.
 
-Here's something I've noticed - the engineers who seem to advance the most aren't stuck in one spot. They _move around the triangle_ based on what's happening or what's needed.
-The most interesting engineers are often those who've learned to operate at different points within the triangle depending on context. An engineer might be 80% Systems, 15% Research, 5% Velocity during normal quarters, but shift to 60% Velocity, 30% Systems, 10% Research when facing a competitive threat.
-I think most people(me included) plateau because they find a comfortable spot and just stay there. They start thinking "I'm a systems person" or "I'm a product engineer" instead of "I'm currently optimizing for systems given my situation."
+Here's something I've noticed - the engineers who seem to advance the most aren't stuck in one spot. They `move around the triangle` based on what's happening or what's needed. They are often those who've learned to operate at different points within the triangle depending on context. An engineer might be 80% Systems, 15% Research, 5% Velocity during normal quarters, but shift to 60% Velocity, 30% Systems, 10% Research when facing a competitive threat.
 
 > Instead of asking "what kind of engineer am I?" maybe the better question is "what economic game am I playing right now, and how should I optimize for it?"
 
@@ -61,7 +56,6 @@ Your tools and approach should probably follow from your constraints, not your p
 ### Some Trade-offs I've Noticed
 
 The axes seem to represent real trade-offs:
-
 - Time spent learning theory vs understanding what users actually want
 - High-level thinking vs implementation details
 - Shipping speed vs deep domain knowledge
