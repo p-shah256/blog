@@ -1,12 +1,12 @@
 +++
-title = "Why I Think AI Copilots Might Be Hurting Junior Developers"
+title = "Why I Think AI Copilots Be Hurting Junior Developers"
 author = ["Pranchal Shah"]
 draft = false
 date = 2024-09-30
 +++
 
 > I know there are two kinds of people in tech - one who just care about the product, and then the others who care about the actual engineering and code. This post is for the second kind of people. For the first ones, it's actually good news - AI writes code and you can get a 'product'. I don't know how far that'll take you in the long run, I'm still pretty skeptical about it, but hey, it's great for you if that's what you're optimizing for! 
-But it's not so great if you're a junior and you actually care about understanding the concepts and ideas and the science - not just code that works.
+But it's not so great if you're a junior and you actually care about understanding the concepts and ideas and the science - not just code that works and you don't even know it exists.
 
 So I've been thinking about this for a while, and I'm starting to wonder if AI copilots are actually making things harder for junior developers like me who want to understand how things work, not easier.
 

@@ -6,7 +6,6 @@ draft = false
 
 ## Basic Mark Operations {#basic-mark-operations}
 
-
 ### Setting &amp; Jumping {#setting-and-jumping}
 
 `m{a-zA-Z}`

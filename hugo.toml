@@ -2,13 +2,12 @@ baseURL = "https://blog.shah256.dev"
 title = "shah256's logbook"
 theme = "PaperMod"
 
-enableGitInfo = true  # Git becomes your timekeeper
+enableGitInfo = true                # Git becomes your timekeeper
 
 [frontmatter]
 lastmod = ["lastmod", ":git", "date", "publishDate"]
 
-# Enable search (because who doesn't love Ctrl+F on steroids?)
-[outputs]
+[outputs]                           # Enable search (because who doesn't love Ctrl+F on steroids?)
 home = ["HTML", "RSS", "JSON"]
 
 [params]
@@ -18,21 +17,22 @@ ShowShareButtons = true
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
-DateFormat = "January 2, 2006"  # Go's weird but canonical date format
-ShowLastMod = true  # 🎯 This is the money shot - shows "Updated on" text
-mainSections = ["posts"]  # VIP list - only posts get past the velvet rope
+DateFormat = "January 2, 2006"      # Go's weird but canonical date format
+ShowLastMod = true                  # 🎯 This is the money shot - shows "Updated on" text
+mainSections = ["posts"]            # VIP list - only posts get past the velvet rope
 
 
 [menu]
 main = [
     {identifier = "posts", name = "Posts", url = "/posts/", weight = 10},
-    {identifier = "cheatsheets", name = "Cheatsheets", url = "/cheatsheets/", weight = 20},
-    {identifier = "scripts", name = "Scripts", url = "/scripts/", weight = 30},
-    {identifier = "about", name = "About", url = "/about/", weight = 40}
+    {identifier = "til", name = "TIL", url = "/til/", weight = 20},
+    {identifier = "cheatsheets", name = "Cheatsheets", url = "/cheatsheets/", weight = 30},
+    {identifier = "scripts", name = "Scripts", url = "/scripts/", weight = 40},
+    {identifier = "about", name = "About", url = "/about/", weight = 50}
 ]
 
 [params.homeInfoParams]
 Title = "👋 Hello!"
 Content = """
-Sharing thoughts on tech, security, and whatever else catches my attention.
+Sharing thoughts on networking, security, and whatever else catches my attention.
 """
