@@ -2,13 +2,14 @@
 title = "Why Compiled Languages Are Faster Than Interpreted Ones (And Why We Still Use Both)"
 author = ["Pranchal Shah"]
 draft = false
+date = 2025-07-11
 +++
 
 I've always heard that compiled languages are faster than interpreted ones but always wondered why? Why is that the case?
 
 After digging a little deeper, here's what I've understood.
 
-## The Core Problem: Getting Code to Run
+### The Core Problem: Getting Code to Run
 
 Let's say you have a piece of code:
 
@@ -36,7 +37,7 @@ Or even lower level in machine code:
 00000000 11000011  ; add al, bl
 ```
 
-## Two Approaches to Getting There
+### Two Approaches to Getting There
 
 You've got two broad options here:
 
@@ -48,7 +49,7 @@ You've got two broad options here:
 - While the CPU wants to run it, parse, interpret and then compile to machine code... line by line
 - Translation happens every single time you run the program
 
-## But If Interpreted Languages Are Slow, Why Do It?
+### But If Interpreted Languages Are Slow, Why Do It?
 
 The tradeoff I see with compiled languages is that once you compile it - it's done, it's set in stone for that CPU. If you need to run it on some other CPU architecture, compile it again. If you need some other environment, you know the drill - compile again.
 
@@ -56,7 +57,7 @@ The dream for most languages is to **write once, run anywhere**. No matter what 
 
 That's where interpreted languages come in.
 
-## The Core Tradeoffs
+### The Core Tradeoffs
 
 **Compiled Languages:**
 - Trading off dev flexibility for speed
@@ -70,13 +71,13 @@ That's where interpreted languages come in.
 - We don't want to compile things that we might never use, so why take a minute or several minutes to compile?
 - Things like "hot reloading," "dynamic typing," or "runtime modification" become possible
 
-## The Real World Gets Complicated
+### The Real World Gets Complicated
 
 There's a whole world of how interpreted languages actually work in practice. Remember, we still need to get to machine code eventually! There are things like JIT (Just-In-Time) compilation, CPython's bytecode compilation, and various other optimizations.
 
 But we'll dive into those later - this is the fundamental tradeoff that drives the whole ecosystem.
 
-## Key Takeaways
+### Key Takeaways
 
 - **Compiled = Fast execution, slower development cycle**
 - **Interpreted = Flexible development, slower execution**

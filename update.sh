@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the blog directory (modify this path if necessary)
-cd ~/myblog
+cd ~/work/myblog
 
 # Pull the latest changes from the git repository
 git pull
