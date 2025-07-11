@@ -1,4 +1,8 @@
-# Why Compiled Languages Are Faster Than Interpreted Ones (And Why We Still Use Both)
++++
+title = "Why Compiled Languages Are Faster Than Interpreted Ones (And Why We Still Use Both)"
+author = ["Pranchal Shah"]
+draft = false
++++
 
 I've always heard that compiled languages are faster than interpreted ones but always wondered why? Why is that the case?
 
